@@ -1,0 +1,11 @@
+file_format: "1"
+id: mpa
+name: mpa
+type: shield
+url: https://github.com/inpudiy/mpa_shield_module
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - mpa_left
+  - mpa_right
