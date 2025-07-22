@@ -1,4 +1,4 @@
-#include "mpa.dtsi"
+
 
 &default_transform {
     col-offset = <6>;
