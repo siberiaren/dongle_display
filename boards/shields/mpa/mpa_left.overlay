@@ -1,16 +1,5 @@
-
-
- kscan0: kscan {
-         compatible     = "zmk,kscan-gpio-matrix";
-         diode-direction = "col2row";
-         wakeup-source;
-
-         row-gpios =
-               <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1
-             , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2
-             , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3
-             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row4
-             ;
+left original 
+#include "mpa.dtsi"
 
 &kscan0 {
     col-gpios
@@ -21,4 +10,13 @@
         , <&pro_micro 20 GPIO_ACTIVE_HIGH> // col5
         , <&pro_micro 19 GPIO_ACTIVE_HIGH> // col6
         ;
+    
+     row-gpios =
+               <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1
+             , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2
+             , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3
+             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row4
+             ;
+
 };
+
