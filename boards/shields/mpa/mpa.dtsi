@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "mpa-layout.dtsi"
+
 
      chosen {
          zmk,kscan            = &kscan0;
