@@ -1,4 +1,4 @@
-#include <mpa_layouts.dtsi>
+#include <physical_layouts.dtsi>
 
 
 / {
