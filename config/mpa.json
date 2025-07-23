@@ -59,5 +59,19 @@
       ]
     }
   },
-  "sensors": []
+  "sensors": [ 
+      {
+      "ref": "left_encoder",
+      "name": "mpa_left",
+      "identifier": "mpa_left",
+      "compatible": "alps,ec11",
+      "label": "LEFT_ENCODER"
+    },
+    {
+      "ref": "right_encoder",
+      "name": "mpa_right",
+      "identifier": "mpa_right",
+      "compatible": "alps,ec11",
+      "label": "RIGHT_ENCODER"
+    }]
 }
