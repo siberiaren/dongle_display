@@ -56,8 +56,9 @@
             bindings =
                 <&macro_press>,
                 <&kp LA(X)>,
-                <&macro_tap>,
+                <&macro_tap_time 20>,
                 <&kp KP_NUMBER_6 &kp KP_NUMBER_3>,
+                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LA(X)>;
 
