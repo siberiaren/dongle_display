@@ -55,8 +55,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt LA(X) &kp KP_NUMBER_6 &kp KP_NUMBER_3 &kt LA(X)>,
-                <&macro_release>;
+                <&kp LA(X)>,
+                <&macro_tap>,
+                <&kp N6 &kp N3>,
+                <&macro_release>,
+                <&kp LA(X)>;
 
             label = "NEW_MACRO_ASSC";
         };
@@ -87,10 +90,10 @@
 
         raise_layer {
             bindings = <
-&mt LEFT_GUI KP_NUMLOCK  &kp KP_SLASH     &none      &kp UP         &kp HOME       &kp PAGE_UP    &kp LEFT_BRACKET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET     &kp LS(MINUS)
-&mt LCTRL KP_PLUS        &kp PRINTSCREEN  &kp LEFT   &kp DOWN       &kp RIGHT      &kp PAGE_DOWN  &kp SQT           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp NON_US_BACKSLASH  &kp LS(RCTRL)
-&mt LALT EQUAL           &kp LC(Z)        &kp LC(Y)  &kp LC(LS(C))  &kp LC(LS(V))  &kp END        &none             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT               &kp RALT
-&trans                   &trans           &lt 3 RET  &lt 3 ESC      &trans         &trans         &none             &none            &kp KP_NUMBER_0  &none            &bootloader           &none
+&mt LEFT_GUI KP_NUMLOCK  &kp KP_SLASH     &none      &kp UP     &kp HOME   &kp PAGE_UP    &kp LEFT_BRACKET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET     &kp LS(MINUS)
+&mt LCTRL KP_PLUS        &kp PRINTSCREEN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN  &kp SQT           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp NON_US_BACKSLASH  &kp LS(RCTRL)
+&mt LALT EQUAL           &kp LC(Z)        &kp LC(Y)  &kp LC(C)  &kp LC(V)  &kp END        &none             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT               &kp RALT
+&trans                   &trans           &lt 3 RET  &lt 3 ESC  &trans     &trans         &none             &none            &kp KP_NUMBER_0  &none            &bootloader           &none
             >;
         };
     };
