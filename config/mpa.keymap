@@ -118,10 +118,10 @@
 
         raise_layer {
             bindings = <
-&mt LEFT_GUI KP_NUMLOCK  &kp KP_SLASH     &none      &kp UP     &kp HOME   &kp PAGE_UP    &kp LEFT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET  &kp BACKSLASH
-&mt LCTRL KP_PLUS        &kp PRINTSCREEN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN  &kp SQT               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LS(MINUS)
-&mt LALT EQUAL           &kp LC(Z)        &kp LC(Y)  &kp LC(C)  &kp LC(V)  &kp END        &none                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &aspas             &aspas_dupla
-&trans                   &trans           &lt 3 RET  &lt 3 ESC  &trans     &trans         &kp LS(LEFT_BRACKET)  &kp PERIOD       &kp KP_NUMBER_0  &kp LS(APOS)     &bootloader        &none
+&mt LEFT_GUI KP_NUMLOCK  &kp KP_SLASH     &none      &kp UP          &kp HOME   &kp PAGE_UP    &kp LEFT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET  &kp BACKSLASH
+&mt LCTRL KP_PLUS        &kp PRINTSCREEN  &kp LEFT   &kp DOWN        &kp RIGHT  &kp PAGE_DOWN  &kp SQT               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LS(MINUS)
+&mt LALT EQUAL           &kp LC(Z)        &kp LC(Y)  &kp LC(C)       &kp LC(V)  &kp END        &none                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &aspas             &aspas_dupla
+&trans                   &trans           &lt 3 RET  &kp KP_NUMLOCK  &trans     &trans         &kp LS(LEFT_BRACKET)  &kp PERIOD       &kp KP_NUMBER_0  &kp LS(APOS)     &bootloader        &none
             >;
         };
     };
