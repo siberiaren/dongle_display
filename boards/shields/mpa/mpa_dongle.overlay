@@ -34,3 +34,28 @@
     kscan     = <&mock_kscan>;
     transform = <&dongle_transform>;
 };
+&i2c0 {
+    status = "okay";
+    /* --- escolha os números conforme seu board ---
+       Ex.: P0.24 -> 24, P0.25 -> 25 (nRF52840 Pro Micro / nice_nano mappings) */
+    sda-pin = <24>;   /* SDA: P0.24 */
+    scl-pin = <25>;   /* SCL: P0.25 */
+
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;        /* endereço I2C */
+        width = <128>;
+        height = <32>;       /* troque para 64 se seu módulo for 128x64 */
+        segment-offset = <0>;
+        com-invdir;
+        /* opcional: reset-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>; */
+        status = "okay";
+    };
+};
+
+/ {
+    chosen {
+        zephyr,display = &ssd1306; /* aponta o display para o sistema */
+        /* se tiver um LED para blanking, use zmk,display-led = &led0; */
+    };
+};
