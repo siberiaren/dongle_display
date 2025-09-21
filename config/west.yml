@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,8 +14,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-    - name: zmk-dongle-display
-      remote: englmaxi
+  - name: zmk-nice-oled
+      remote: mctechnology17
       revision: main
   self:
     path: config
