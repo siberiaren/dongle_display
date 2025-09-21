@@ -14,7 +14,7 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-  - name: zmk-nice-oled
+    - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
   self:
