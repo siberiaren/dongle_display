@@ -34,3 +34,30 @@
     kscan     = <&mock_kscan>;
     transform = <&dongle_transform>;
 };
+&i2c0 {
+    compatible = "nordic,nrf-twim";
+    status = "okay";
+    scl-pin = <20>;   /* P0.25 -> SCL */
+    sda-pin = <17>;   /* P0.24 -> SDA */
+
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;          /* Endereço I2C (confirme se é 0x3C ou 0x3D) */
+        width = <128>;
+        height = <32>;         /* troque para 64 se for 128x64 */
+        segment-offset = <0>;
+        com-invdir;
+        status = "okay";
+    };
+};
+
+/ {
+    chosen {
+        zmk,display = &ssd1306;
+    };
+
+    zmk,display-status {
+        compatible = "zmk,display-status";
+        label = "ZMK Display";
+    };
+};
