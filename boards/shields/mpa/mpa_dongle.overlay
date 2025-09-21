@@ -37,15 +37,15 @@
 &i2c0 {
     status = "okay";
 
-    /* Ajuste conforme seu hardware real */
-    sda-pin = <24>;   /* P0.24 = SDA */
-    scl-pin = <25>;   /* P0.25 = SCL */
+    /* Ajuste conforme o seu hardware */
+    sda-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
+    scl-gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
 
     ssd1306: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;        /* endereço I2C: 0x3C ou 0x3D */
         width = <128>;
-        height = <32>;       /* use <64> se for display 128x64 */
+        height = <32>;       /* se for 128x64, troque para <64> */
         segment-offset = <0>;
         com-invdir;
         status = "okay";
