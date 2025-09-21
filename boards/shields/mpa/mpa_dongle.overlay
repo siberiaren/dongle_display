@@ -34,26 +34,3 @@
     kscan     = <&mock_kscan>;
     transform = <&dongle_transform>;
 };
-&i2c0 {
-    status = "okay";
-
-    /* Pinos corretos do seu dongle (ajuste conforme necessário) */
-    sda-pin = <24>;
-    scl-pin = <25>;
-
-    ssd1306: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;        /* endereço I2C: 0x3C ou 0x3D */
-        width = <128>;
-        height = <32>;       /* se for 128x64, troque para <64> */
-        segment-offset = <0>;
-        com-invdir;
-        status = "okay";
-    };
-};
-
- / {
-    chosen {
-        zephyr,display = &ssd1306;
-    };
-};
