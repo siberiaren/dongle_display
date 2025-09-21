@@ -1,6 +1,6 @@
 include:
   - board: nice_nano_v2
-    shield: mpa_dongle   
+    shield: mpa_dongle nice_oled
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
