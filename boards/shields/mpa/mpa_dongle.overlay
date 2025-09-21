@@ -37,9 +37,9 @@
 &i2c0 {
     status = "okay";
 
-    /* Ajuste conforme o seu hardware */
-    sda-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
-    scl-gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+    /* Pinos corretos do seu dongle (ajuste conforme necessário) */
+    sda-pin = <24>;
+    scl-pin = <25>;
 
     ssd1306: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
