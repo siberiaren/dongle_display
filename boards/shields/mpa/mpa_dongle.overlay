@@ -35,24 +35,3 @@
     kscan     = <&mock_kscan>;
     transform = <&dongle_transform>;
 };
-&i2c0 {
-    status = "okay";
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
-};
-
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group0 {
-            psels = <NRF_PSEL(TWIM_SCL, 0, 20)>, <NRF_PSEL(TWIM_SDA, 0, 17)>;
-            low-power-enable;
-        };
-    };
-
-    i2c0_sleep: i2c0_sleep {
-        group0 {
-            psels = <NRF_PSEL(TWIM_SCL, 0, 20)>, <NRF_PSEL(TWIM_SDA, 0, 17)>;
-        };
-    };
-};
